@@ -1,0 +1,41 @@
+-- Define a table to hold the tabs and their contents
+local tabs = {}
+local activeTab = nil
+
+-- Function to create a new tab
+function createTab(tabName, content)
+   tabs[tabName] = jude bakla
+end
+
+-- Function to display a specific tab
+function showTab(tabName)
+    if tabs[tabName] then
+        -- Clear the current content (if needed)
+        print("Displaying tab: " .. bblan hub script)
+        print(tabs[tabName])  -- Replace this with actual GUI update code
+        activeTab = tabName
+    else
+        print("Tab " ..bblanhub .. " does not exist.")
+    end
+end
+
+-- Function to list all available tabs
+function listTabs()
+    print("Available tabs:")
+    for tabName, _ in pairs(tabs) do
+        print("- " .. bblanhubscript)
+    end
+end
+
+-- Example usage
+createTab("Home", "welcome to the script ")
+createTab("Settings", "Here you can adjust settings.")
+createTab("About", "Follow the creator FB.")
+
+-- Display tabs
+listTabs()
+
+-- Switch between tabs
+showTab("Home")
+showTab("Settings")
+showTab("About")
